@@ -1,258 +1,203 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO Meta Tags -->
-    <title>
-      Gabriel Llerena - Desarrollador Backend | Especialista en Java
-    </title>
-    <meta
-      name="description"
-      content="Servicios profesionales de desarrollo backend. Experto en Java, Spring Boot, microservicios y bases de datos. ¡Construye sistemas robustos y escalables!"
-    />
-    <meta
-      name="keywords"
-      content="desarrollador backend, Java, Spring Boot, microservicios, API REST, bases de datos"
-    />
-    <meta name="author" content="Gabriel Llerena" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Open Graph Meta Tags -->
-    <meta
-      property="og:title"
-      content="Gabriel Llerena - Desarrollador Backend"
-    />
-    <meta
-      property="og:description"
-      content="Servicios profesionales de desarrollo backend con Java, Spring Boot y microservicios"
-    />
-    <meta property="og:type" content="website" />
+  <!-- SEO Meta Tags -->
+  <title>
+    Gabriel Llerena - Desarrollador Backend | Especialista en Java
+  </title>
+  <link rel="icon" href="https://cdn-icons-png.freepik.com/512/2282/2282234.png" type="image/png">
+  <meta name="description"
+    content="Servicios profesionales de desarrollo backend. Experto en Java, Spring Boot, microservicios y bases de datos. ¡Construye sistemas robustos y escalables!" />
+  <meta name="keywords" content="desarrollador backend, Java, Spring Boot, microservicios, API REST, bases de datos" />
+  <meta name="author" content="Gabriel Llerena" />
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Gabriel Llerena - Desarrollador Backend" />
+  <meta property="og:description"
+    content="Servicios profesionales de desarrollo backend con Java, Spring Boot y microservicios" />
+  <meta property="og:type" content="website" />
 
-    <!-- Configuración y extensiones de Tailwind -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: {
-                50: "#eef2ff",
-                100: "#e0e7ff",
-                200: "#c7d2fe",
-                300: "#a5b4fc",
-                400: "#818cf8",
-                500: "#6366f1",
-                600: "#4f46e5",
-                700: "#4338ca",
-                800: "#3730a3",
-                900: "#312e81",
-              },
-              secondary: {
-                50: "#f8fafc",
-                100: "#f1f5f9",
-                200: "#e2e8f0",
-                300: "#cbd5e1",
-                400: "#94a3b8",
-                500: "#64748b",
-                600: "#475569",
-                700: "#334155",
-                800: "#1e293b",
-                900: "#0f172a",
-              },
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configuración y extensiones de Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: "#eef2ff",
+              100: "#e0e7ff",
+              200: "#c7d2fe",
+              300: "#a5b4fc",
+              400: "#818cf8",
+              500: "#6366f1",
+              600: "#4f46e5",
+              700: "#4338ca",
+              800: "#3730a3",
+              900: "#312e81",
             },
-            fontFamily: {
-              sans: ["Inter", "system-ui", "sans-serif"],
-              mono: ["JetBrains Mono", "monospace"],
+            secondary: {
+              50: "#f8fafc",
+              100: "#f1f5f9",
+              200: "#e2e8f0",
+              300: "#cbd5e1",
+              400: "#94a3b8",
+              500: "#64748b",
+              600: "#475569",
+              700: "#334155",
+              800: "#1e293b",
+              900: "#0f172a",
             },
           },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+            mono: ["JetBrains Mono", "monospace"],
+          },
         },
-      };
-    </script>
+      },
+    };
+  </script>
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body class="antialiased text-secondary-800 bg-white">
-    <!-- Skip link para accesibilidad -->
-    <a
-      href="#main-content"
-      class="sr-only focus:not-sr-only focus:absolute focus:px-4 focus:py-2 focus:bg-primary-600 focus:text-white focus:z-50"
-      >Saltar al contenido principal</a
-    >
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-    <!-- Barra de navegación -->
-    <nav
-      class="bg-secondary-900 fixed w-full z-50 shadow-lg"
-      aria-label="Navegación principal"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <!-- Logo y nombre -->
-          <div class="flex-shrink-0 flex items-center">
-            <span class="text-white font-bold text-xl">
-              <span class="text-primary-400">&lt;</span>Gabriel Llerena<span
-                class="text-primary-400"
-                >/&gt;</span
-              >
-            </span>
+<body class="antialiased text-secondary-800 bg-white">
+  <!-- Skip link para accesibilidad -->
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:px-4 focus:py-2 focus:bg-primary-600 focus:text-white focus:z-50">Saltar
+    al contenido principal</a>
+
+  <!-- Barra de navegación -->
+  <nav class="bg-secondary-900 fixed w-full z-50 shadow-lg" aria-label="Navegación principal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo y nombre -->
+        <div class="flex-shrink-0 flex items-center">
+          <span class="text-white font-bold text-xl">
+            <span class="text-primary-400">&lt;</span>Gabriel Llerena<span class="text-primary-400">/&gt;</span>
+          </span>
+        </div>
+
+        <!-- Links de navegación (Desktop) -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#inicio"
+              class="text-white px-3 py-2 text-sm font-medium hover:bg-secondary-800 rounded-md transition-colors"
+              aria-current="page">
+              <i class="fa-solid fa-home mr-1"></i>Inicio
+            </a>
+            <a href="#servicios"
+              class="text-secondary-300 hover:text-white px-3 py-2 text-sm font-medium hover:bg-secondary-800 rounded-md transition-colors">
+              <i class="fa-solid fa-server mr-1"></i>Servicios
+            </a>
+            <a href="#tecnologias"
+              class="text-secondary-300 hover:text-white px-3 py-2 text-sm font-medium hover:bg-secondary-800 rounded-md transition-colors">
+              <i class="fa-solid fa-code mr-1"></i>Tecnologías
+            </a>
+            <a href="#testimonios"
+              class="text-secondary-300 hover:text-white px-3 py-2 text-sm font-medium hover:bg-secondary-800 rounded-md transition-colors">
+              <i class="fa-solid fa-comment mr-1"></i>Testimonios
+            </a>
+            <a href="#contacto"
+              class="text-white bg-primary-600 hover:bg-primary-700 px-3 py-2 text-sm font-medium rounded-md transition-colors">
+              <i class="fa-solid fa-envelope mr-1"></i>Contacto
+            </a>
           </div>
+        </div>
 
-          <!-- Links de navegación (Desktop) -->
-          <div class="hidden md:block">
-            <div class="ml-10 flex items-baseline space-x-4">
-              <a
-                href="#inicio"
-                class="text-white px-3 py-2 text-sm font-medium hover:bg-secondary-800 rounded-md transition-colors"
-                aria-current="page"
-              >
-                <i class="fa-solid fa-home mr-1"></i>Inicio
+        <!-- Botón menú móvil -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" type="button"
+            class="text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+            aria-expanded="false" aria-controls="mobile-menu">
+            <span class="sr-only">Abrir menú principal</span>
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#inicio" class="text-white block px-3 py-2 text-base font-medium hover:bg-secondary-800 rounded-md">
+          <i class="fa-solid fa-home mr-1"></i>Inicio
+        </a>
+        <a href="#servicios"
+          class="text-secondary-300 hover:text-white block px-3 py-2 text-base font-medium hover:bg-secondary-800 rounded-md">
+          <i class="fa-solid fa-server mr-1"></i>Servicios
+        </a>
+        <a href="#tecnologias"
+          class="text-secondary-300 hover:text-white block px-3 py-2 text-base font-medium hover:bg-secondary-800 rounded-md">
+          <i class="fa-solid fa-code mr-1"></i>Tecnologías
+        </a>
+        <a href="#testimonios"
+          class="text-secondary-300 hover:text-white block px-3 py-2 text-base font-medium hover:bg-secondary-800 rounded-md">
+          <i class="fa-solid fa-comment mr-1"></i>Testimonios
+        </a>
+        <a href="#contacto"
+          class="text-white bg-primary-600 hover:bg-primary-700 block px-3 py-2 text-base font-medium rounded-md">
+          <i class="fa-solid fa-envelope mr-1"></i>Contacto
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="inicio"
+      class="relative bg-gradient-to-r from-secondary-900 via-secondary-800 to-secondary-900 pt-24 pb-16 md:pt-32 md:pb-24">
+      <!-- Patrón decorativo -->
+      <div
+        class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMzMzQxNTUiIGZpbGwtb3BhY2l0eT0iMC4wOCI+PHBhdGggZD0iTTM2IDM0aDR2MWgtNHYtMXptMC0yaDF2NGgtMXYtNHptNiAwdjFoLTF2LTFoLTJ2MWgtMXYtM2g2djN6bS0xLTJoLTJ2MWgydi0xem0tMy0yaDF2NGgtMXYtNHptNCAwdjFoLTV2LTFoNXptLTEwIDBoM3YxaC0zdi0xem0wIDJoMnYxaC0ydi0xem0tMy0yaDF2NGgtMXYtNHptNC0yaDF2OGgtMXYtOHptLTUgMGgxdjhoLTF2LTh6bTEwIDBo-MSB2NGgtMXYtNHptLTEyLTJoMXY2aC0xdi02em01LTJoMXYxMGgtMXYtMTB6bTUgMGgxdjEwaC0xdi0xMHoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==')] opacity-10">
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="lg:flex lg:items-center lg:space-x-12">
+          <div class="lg:w-1/2">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-4">
+              Desarrollo Backend<br />
+              <span class="text-primary-400">de alto rendimiento</span>
+            </h1>
+            <p class="text-lg md:text-xl text-secondary-300 mb-8">
+              Especialista en Java, Spring Boot y arquitecturas de
+              microservicios. Construyo sistemas robustos, seguros y altamente
+              escalables que potencian tu negocio.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+              <a href="#contacto"
+                class="inline-flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors">
+                <i class="fa-solid fa-paper-plane mr-2"></i>
+                Solicitar consulta
               </a>
-              <a
-                href="#servicios"
-                class="text-secondary-300 hover:text-white px-3 py-2 text-sm font-medium hover:bg-secondary-800 rounded-md transition-colors"
-              >
-                <i class="fa-solid fa-server mr-1"></i>Servicios
-              </a>
-              <a
-                href="#tecnologias"
-                class="text-secondary-300 hover:text-white px-3 py-2 text-sm font-medium hover:bg-secondary-800 rounded-md transition-colors"
-              >
-                <i class="fa-solid fa-code mr-1"></i>Tecnologías
-              </a>
-              <a
-                href="#testimonios"
-                class="text-secondary-300 hover:text-white px-3 py-2 text-sm font-medium hover:bg-secondary-800 rounded-md transition-colors"
-              >
-                <i class="fa-solid fa-comment mr-1"></i>Testimonios
-              </a>
-              <a
-                href="#contacto"
-                class="text-white bg-primary-600 hover:bg-primary-700 px-3 py-2 text-sm font-medium rounded-md transition-colors"
-              >
-                <i class="fa-solid fa-envelope mr-1"></i>Contacto
+              <a href="#servicios"
+                class="inline-flex justify-center items-center px-6 py-3 border border-secondary-400 rounded-md text-base font-medium text-white hover:bg-secondary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors">
+                <i class="fa-solid fa-arrow-down mr-2"></i>
+                Ver servicios
               </a>
             </div>
           </div>
-
-          <!-- Botón menú móvil -->
-          <div class="md:hidden">
-            <button
-              id="mobile-menu-button"
-              type="button"
-              class="text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-            >
-              <span class="sr-only">Abrir menú principal</span>
-              <i class="fa-solid fa-bars text-xl"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Menú móvil -->
-      <div class="md:hidden hidden" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a
-            href="#inicio"
-            class="text-white block px-3 py-2 text-base font-medium hover:bg-secondary-800 rounded-md"
-          >
-            <i class="fa-solid fa-home mr-1"></i>Inicio
-          </a>
-          <a
-            href="#servicios"
-            class="text-secondary-300 hover:text-white block px-3 py-2 text-base font-medium hover:bg-secondary-800 rounded-md"
-          >
-            <i class="fa-solid fa-server mr-1"></i>Servicios
-          </a>
-          <a
-            href="#tecnologias"
-            class="text-secondary-300 hover:text-white block px-3 py-2 text-base font-medium hover:bg-secondary-800 rounded-md"
-          >
-            <i class="fa-solid fa-code mr-1"></i>Tecnologías
-          </a>
-          <a
-            href="#testimonios"
-            class="text-secondary-300 hover:text-white block px-3 py-2 text-base font-medium hover:bg-secondary-800 rounded-md"
-          >
-            <i class="fa-solid fa-comment mr-1"></i>Testimonios
-          </a>
-          <a
-            href="#contacto"
-            class="text-white bg-primary-600 hover:bg-primary-700 block px-3 py-2 text-base font-medium rounded-md"
-          >
-            <i class="fa-solid fa-envelope mr-1"></i>Contacto
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Contenido principal -->
-    <main id="main-content">
-      <!-- Hero Section -->
-      <section
-        id="inicio"
-        class="relative bg-gradient-to-r from-secondary-900 via-secondary-800 to-secondary-900 pt-24 pb-16 md:pt-32 md:pb-24"
-      >
-        <!-- Patrón decorativo -->
-        <div
-          class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMzMzQxNTUiIGZpbGwtb3BhY2l0eT0iMC4wOCI+PHBhdGggZD0iTTM2IDM0aDR2MWgtNHYtMXptMC0yaDF2NGgtMXYtNHptNiAwdjFoLTF2LTFoLTJ2MWgtMXYtM2g2djN6bS0xLTJoLTJ2MWgydi0xem0tMy0yaDF2NGgtMXYtNHptNCAwdjFoLTV2LTFoNXptLTEwIDBoM3YxaC0zdi0xem0wIDJoMnYxaC0ydi0xem0tMy0yaDF2NGgtMXYtNHptNC0yaDF2OGgtMXYtOHptLTUgMGgxdjhoLTF2LTh6bTEwIDBo-MSB2NGgtMXYtNHptLTEyLTJoMXY2aC0xdi02em01LTJoMXYxMGgtMXYtMTB6bTUgMGgxdjEwaC0xdi0xMHoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==')] opacity-10"
-        ></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div class="lg:flex lg:items-center lg:space-x-12">
-            <div class="lg:w-1/2">
-              <h1
-                class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-4"
-              >
-                Desarrollo Backend<br />
-                <span class="text-primary-400">de alto rendimiento</span>
-              </h1>
-              <p class="text-lg md:text-xl text-secondary-300 mb-8">
-                Especialista en Java, Spring Boot y arquitecturas de
-                microservicios. Construyo sistemas robustos, seguros y altamente
-                escalables que potencian tu negocio.
-              </p>
-              <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
-                <a
-                  href="#contacto"
-                  class="inline-flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors"
-                >
-                  <i class="fa-solid fa-paper-plane mr-2"></i>
-                  Solicitar consulta
-                </a>
-                <a
-                  href="#servicios"
-                  class="inline-flex justify-center items-center px-6 py-3 border border-secondary-400 rounded-md text-base font-medium text-white hover:bg-secondary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors"
-                >
-                  <i class="fa-solid fa-arrow-down mr-2"></i>
-                  Ver servicios
-                </a>
-              </div>
-            </div>
-            <div class="hidden lg:block lg:w-1/2">
-              <div class="relative mt-10 lg:mt-0">
-                <!-- Código ilustrativo -->
-                <div
-                  class="bg-secondary-800 rounded-lg shadow-xl p-6 text-sm font-mono text-left overflow-hidden transform rotate-1"
-                >
-                  <div class="flex items-center mb-4">
-                    <div class="h-3 w-3 rounded-full bg-red-500 mr-2"></div>
-                    <div class="h-3 w-3 rounded-full bg-yellow-500 mr-2"></div>
-                    <div class="h-3 w-3 rounded-full bg-green-500"></div>
-                  </div>
-                  <pre
-                    class="language-java"
-                  ><code class="text-xs text-blue-300">
+          <div class="hidden lg:block lg:w-1/2">
+            <div class="relative mt-10 lg:mt-0">
+              <!-- Código ilustrativo -->
+              <div
+                class="bg-secondary-800 rounded-lg shadow-xl p-6 text-sm font-mono text-left overflow-hidden transform rotate-1">
+                <div class="flex items-center mb-4">
+                  <div class="h-3 w-3 rounded-full bg-red-500 mr-2"></div>
+                  <div class="h-3 w-3 rounded-full bg-yellow-500 mr-2"></div>
+                  <div class="h-3 w-3 rounded-full bg-green-500"></div>
+                </div>
+                <pre class="language-java"><code class="text-xs text-blue-300">
 <span class="text-green-400">@RestController</span>
 <span class="text-green-400">@RequestMapping</span>(<span class="text-yellow-300">"/api/v1"</span>)
 <span class="text-purple-400">public class</span> <span class="text-blue-300">ProjectController</span> {
@@ -268,939 +213,814 @@
     }
 }
                   </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Stats -->
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16 text-center">
-            <div class="bg-secondary-800/50 backdrop-blur-sm rounded-lg p-6">
-              <p class="text-4xl font-bold text-primary-400 mb-2">8+</p>
-              <p class="text-secondary-300">Años de experiencia</p>
-            </div>
-            <div class="bg-secondary-800/50 backdrop-blur-sm rounded-lg p-6">
-              <p class="text-4xl font-bold text-primary-400 mb-2">50+</p>
-              <p class="text-secondary-300">Proyectos completados</p>
-            </div>
-            <div class="bg-secondary-800/50 backdrop-blur-sm rounded-lg p-6">
-              <p class="text-4xl font-bold text-primary-400 mb-2">99.9%</p>
-              <p class="text-secondary-300">Uptime garantizado</p>
-            </div>
-            <div class="bg-secondary-800/50 backdrop-blur-sm rounded-lg p-6">
-              <p class="text-4xl font-bold text-primary-400 mb-2">24/7</p>
-              <p class="text-secondary-300">Soporte técnico</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Servicios -->
-      <section id="servicios" class="py-16 md:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">
-              Servicios Especializados
-            </h2>
-            <p class="max-w-3xl mx-auto text-lg text-secondary-600">
-              Soluciones backend robustas y personalizadas para cualquier tipo
-              de proyecto, desde startups hasta empresas consolidadas.
-            </p>
-          </div>
-
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Servicio 1 -->
-            <div
-              class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all p-6 border border-secondary-100 group"
-            >
-              <div
-                class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary-100 text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors"
-              >
-                <i class="fa-solid fa-code text-xl"></i>
-              </div>
-              <h3 class="text-xl font-bold text-secondary-900 mb-2">
-                Desarrollo de APIs
-              </h3>
-              <p class="text-secondary-600 mb-4">
-                Diseño e implementación de APIs RESTful escalables, seguras y
-                con documentación completa utilizando Spring Boot y Java.
-              </p>
-              <ul class="space-y-2 text-sm text-secondary-500 mb-4">
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Endpoints robustos y optimizados
-                </li>
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Autenticación OAuth2 y JWT
-                </li>
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Documentación Swagger/OpenAPI
-                </li>
-              </ul>
-              <a
-                href="#contacto"
-                class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center"
-              >
-                Más información <i class="fa-solid fa-arrow-right ml-1"></i>
-              </a>
-            </div>
-
-            <!-- Servicio 2 -->
-            <div
-              class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all p-6 border border-secondary-100 group"
-            >
-              <div
-                class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary-100 text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors"
-              >
-                <i class="fa-solid fa-cubes text-xl"></i>
-              </div>
-              <h3 class="text-xl font-bold text-secondary-900 mb-2">
-                Microservicios
-              </h3>
-              <p class="text-secondary-600 mb-4">
-                Arquitectura e implementación de sistemas distribuidos basados
-                en microservicios para máxima escalabilidad y resiliencia.
-              </p>
-              <ul class="space-y-2 text-sm text-secondary-500 mb-4">
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Arquitectura basada en dominios (DDD)
-                </li>
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Circuit breakers y service discovery
-                </li>
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Orquestación con Kubernetes
-                </li>
-              </ul>
-              <a
-                href="#contacto"
-                class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center"
-              >
-                Más información <i class="fa-solid fa-arrow-right ml-1"></i>
-              </a>
-            </div>
-
-            <!-- Servicio 3 -->
-            <div
-              class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all p-6 border border-secondary-100 group"
-            >
-              <div
-                class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary-100 text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors"
-              >
-                <i class="fa-solid fa-database text-xl"></i>
-              </div>
-              <h3 class="text-xl font-bold text-secondary-900 mb-2">
-                Bases de datos
-              </h3>
-              <p class="text-secondary-600 mb-4">
-                Diseño, implementación y optimización de bases de datos
-                relacionales y NoSQL con alto rendimiento y escalabilidad.
-              </p>
-              <ul class="space-y-2 text-sm text-secondary-500 mb-4">
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Diseño eficiente de esquemas
-                </li>
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Optimización de consultas complejas
-                </li>
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Estrategias de replicación y sharding
-                </li>
-              </ul>
-              <a
-                href="#contacto"
-                class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center"
-              >
-                Más información <i class="fa-solid fa-arrow-right ml-1"></i>
-              </a>
-            </div>
-
-            <!-- Servicio 4 -->
-            <div
-              class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all p-6 border border-secondary-100 group"
-            >
-              <div
-                class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary-100 text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors"
-              >
-                <i class="fa-solid fa-shield-halved text-xl"></i>
-              </div>
-              <h3 class="text-xl font-bold text-secondary-900 mb-2">
-                Seguridad
-              </h3>
-              <p class="text-secondary-600 mb-4">
-                Implementación de robustos sistemas de seguridad, autenticación
-                y autorización para proteger datos sensibles.
-              </p>
-              <ul class="space-y-2 text-sm text-secondary-500 mb-4">
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Prevención de OWASP Top 10
-                </li>
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Sistemas de autenticación multifactor
-                </li>
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Auditorías de seguridad
-                </li>
-              </ul>
-              <a
-                href="#contacto"
-                class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center"
-              >
-                Más información <i class="fa-solid fa-arrow-right ml-1"></i>
-              </a>
-            </div>
-
-            <!-- Servicio 5 -->
-            <div
-              class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all p-6 border border-secondary-100 group"
-            >
-              <div
-                class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary-100 text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors"
-              >
-                <i class="fa-solid fa-cloud text-xl"></i>
-              </div>
-              <h3 class="text-xl font-bold text-secondary-900 mb-2">
-                Cloud & DevOps
-              </h3>
-              <p class="text-secondary-600 mb-4">
-                Despliegue y gestión de aplicaciones en la nube con CI/CD
-                automatizado y monitorización avanzada.
-              </p>
-              <ul class="space-y-2 text-sm text-secondary-500 mb-4">
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Despliegue en AWS, Azure o GCP
-                </li>
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Pipelines de CI/CD con Jenkins o GitHub Actions
-                </li>
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Infraestructura como código (Terraform)
-                </li>
-              </ul>
-              <a
-                href="#contacto"
-                class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center"
-              >
-                Más información <i class="fa-solid fa-arrow-right ml-1"></i>
-              </a>
-            </div>
-
-            <!-- Servicio 6 -->
-            <div
-              class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all p-6 border border-secondary-100 group"
-            >
-              <div
-                class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary-100 text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors"
-              >
-                <i class="fa-solid fa-lightbulb text-xl"></i>
-              </div>
-              <h3 class="text-xl font-bold text-secondary-900 mb-2">
-                Consultoría técnica
-              </h3>
-              <p class="text-secondary-600 mb-4">
-                Asesoría experta para optimización de rendimiento, arquitectura
-                y mejores prácticas de desarrollo backend.
-              </p>
-              <ul class="space-y-2 text-sm text-secondary-500 mb-4">
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Revisión y mejora de código existente
-                </li>
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Optimización de rendimiento
-                </li>
-                <li class="flex items-start">
-                  <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                  Planificación de arquitectura escalable
-                </li>
-              </ul>
-              <a
-                href="#contacto"
-                class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center"
-              >
-                Más información <i class="fa-solid fa-arrow-right ml-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Tecnologías -->
-      <section id="tecnologias" class="py-16 md:py-24 bg-secondary-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">
-              Tecnologías dominadas
-            </h2>
-            <p class="max-w-3xl mx-auto text-lg text-secondary-600">
-              Utilizo las herramientas más modernas y robustas para desarrollar
-              soluciones de alto rendimiento.
-            </p>
-          </div>
-
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            <!-- Java -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4"
-              >
-                <i class="fa-brands fa-java text-3xl text-primary-600"></i>
-              </div>
-              <h3 class="font-medium text-secondary-900">Java</h3>
-            </div>
-
-            <!-- Spring -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4"
-              >
-                <i class="fa-solid fa-leaf text-3xl text-green-500"></i>
-              </div>
-              <h3 class="font-medium text-secondary-900">Spring Boot</h3>
-            </div>
-
-            <!-- SQL -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4"
-              >
-                <i class="fa-solid fa-database text-3xl text-blue-500"></i>
-              </div>
-              <h3 class="font-medium text-secondary-900">SQL</h3>
-            </div>
-
-            <!-- NoSQL -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4"
-              >
-                <i class="fa-solid fa-cubes text-3xl text-yellow-500"></i>
-              </div>
-              <h3 class="font-medium text-secondary-900">NoSQL</h3>
-            </div>
-
-            <!-- Docker -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4"
-              >
-                <i class="fa-brands fa-docker text-3xl text-blue-600"></i>
-              </div>
-              <h3 class="font-medium text-secondary-900">Docker</h3>
-            </div>
-
-            <!-- Kubernetes -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4"
-              >
-                <i class="fa-solid fa-dharmachakra text-3xl text-blue-400"></i>
-              </div>
-              <h3 class="font-medium text-secondary-900">Kubernetes</h3>
-            </div>
-
-            <!-- AWS -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4"
-              >
-                <i class="fa-brands fa-aws text-3xl text-orange-500"></i>
-              </div>
-              <h3 class="font-medium text-secondary-900">AWS</h3>
-            </div>
-
-            <!-- Git -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4"
-              >
-                <i class="fa-brands fa-git-alt text-3xl text-red-500"></i>
-              </div>
-              <h3 class="font-medium text-secondary-900">Git</h3>
-            </div>
-
-            <!-- CI/CD -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4"
-              >
-                <i class="fa-solid fa-infinity text-3xl text-purple-600"></i>
-              </div>
-              <h3 class="font-medium text-secondary-900">CI/CD</h3>
-            </div>
-
-            <!-- REST -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4"
-              >
-                <i class="fa-solid fa-plug text-3xl text-green-600"></i>
-              </div>
-              <h3 class="font-medium text-secondary-900">REST APIs</h3>
-            </div>
-
-            <!-- gRPC -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4"
-              >
-                <i class="fa-solid fa-bolt text-3xl text-yellow-600"></i>
-              </div>
-              <h3 class="font-medium text-secondary-900">gRPC</h3>
-            </div>
-
-            <!-- Kafka -->
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4"
-              >
-                <i class="fa-solid fa-stream text-3xl text-red-600"></i>
-              </div>
-              <h3 class="font-medium text-secondary-900">Apache Kafka</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonios -->
-      <section id="testimonios" class="py-16 md:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">
-              Lo que dicen mis clientes
-            </h2>
-            <p class="max-w-3xl mx-auto text-lg text-secondary-600">
-              He tenido el privilegio de trabajar con empresas innovadoras de
-              diversos sectores.
-            </p>
-          </div>
-
-          <div class="grid md:grid-cols-3 gap-8">
-            <!-- Testimonio 1 -->
-            <div
-              class="bg-white rounded-xl shadow-lg p-8 relative hover:shadow-xl transition-shadow"
-            >
-              <div
-                class="text-primary-600 text-5xl absolute -top-5 left-6 opacity-30"
-              >
-                "
-              </div>
-              <div class="flex items-center mb-6">
-                <div class="text-yellow-400 flex">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-              <blockquote class="mb-6 text-secondary-600">
-                "Gabriel desarrolló toda nuestra arquitectura de microservicios,
-                mejorando drásticamente el rendimiento y escalabilidad. Su
-                profundo conocimiento técnico y profesionalismo hicieron que la
-                transición fuera fluida."
-              </blockquote>
-              <div class="flex items-center">
-                <div
-                  class="h-12 w-12 rounded-full bg-secondary-200 mr-4 flex items-center justify-center"
-                >
-                  <i class="fa-solid fa-user text-secondary-500"></i>
-                </div>
-                <div>
-                  <p class="font-medium text-secondary-900">
-                    Roberto Hernández
-                  </p>
-                  <p class="text-sm text-secondary-500">
-                    CTO, FinTech Solutions
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonio 2 -->
-            <div
-              class="bg-white rounded-xl shadow-lg p-8 relative hover:shadow-xl transition-shadow"
-            >
-              <div
-                class="text-primary-600 text-5xl absolute -top-5 left-6 opacity-30"
-              >
-                "
-              </div>
-              <div class="flex items-center mb-6">
-                <div class="text-yellow-400 flex">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-              <blockquote class="mb-6 text-secondary-600">
-                "Contratamos a Gabriel para optimizar nuestras bases de datos y
-                APIs. El resultado fue impresionante: nuestra plataforma ahora
-                maneja 10 veces más tráfico sin problemas de rendimiento.
-                Altamente recomendado."
-              </blockquote>
-              <div class="flex items-center">
-                <div
-                  class="h-12 w-12 rounded-full bg-secondary-200 mr-4 flex items-center justify-center"
-                >
-                  <i class="fa-solid fa-user text-secondary-500"></i>
-                </div>
-                <div>
-                  <p class="font-medium text-secondary-900">Elena Martínez</p>
-                  <p class="text-sm text-secondary-500">CEO, DataTrack</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonio 3 -->
-            <div
-              class="bg-white rounded-xl shadow-lg p-8 relative hover:shadow-xl transition-shadow"
-            >
-              <div
-                class="text-primary-600 text-5xl absolute -top-5 left-6 opacity-30"
-              >
-                "
-              </div>
-              <div class="flex items-center mb-6">
-                <div class="text-yellow-400 flex">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-              <blockquote class="mb-6 text-secondary-600">
-                "La consultoría de Gabriel nos ayudó a identificar y resolver
-                problemas críticos en nuestra infraestructura. Su enfoque
-                sistemático y su capacidad para explicar conceptos complejos de
-                manera simple fueron invaluables."
-              </blockquote>
-              <div class="flex items-center">
-                <div
-                  class="h-12 w-12 rounded-full bg-secondary-200 mr-4 flex items-center justify-center"
-                >
-                  <i class="fa-solid fa-user text-secondary-500"></i>
-                </div>
-                <div>
-                  <p class="font-medium text-secondary-900">Miguel Sánchez</p>
-                  <p class="text-sm text-secondary-500">
-                    Director de IT, LogiTech Solutions
-                  </p>
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- Sección de promoción cruzada -->
-      <section
-        class="py-16 md:py-24 bg-gradient-to-r from-primary-600 to-primary-700 text-white"
-      >
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="lg:flex lg:items-center lg:justify-between">
-            <div class="lg:w-2/3">
-              <div class="flex items-center mb-4">
-                <i
-                  class="fa-solid fa-palette text-3xl mr-3 text-primary-200"
-                ></i>
-                <h2 class="text-3xl md:text-4xl font-bold">
-                  ¿Tu proyecto también necesita Frontend?
-                </h2>
-              </div>
-              <p class="text-lg text-primary-100 mb-6 leading-relaxed">
-                Para completar tu proyecto con una interfaz moderna y atractiva,
-                te recomiendo los servicios de
-                <span class="font-semibold text-white">Andriu Dex</span>,
-                especialista en desarrollo frontend con React.js y tecnologías
-                modernas.
-              </p>
-
-              <div class="grid md:grid-cols-2 gap-4 mb-8">
-                <div class="flex items-start">
-                  <i
-                    class="fa-solid fa-check-circle text-green-300 mt-1 mr-3"
-                  ></i>
-                  <div>
-                    <p class="font-medium text-white">
-                      Interfaces responsivas y modernas
-                    </p>
-                    <p class="text-sm text-primary-200">
-                      Diseños que se adaptan a cualquier dispositivo
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <i
-                    class="fa-solid fa-check-circle text-green-300 mt-1 mr-3"
-                  ></i>
-                  <div>
-                    <p class="font-medium text-white">
-                      Desarrollo con React.js
-                    </p>
-                    <p class="text-sm text-primary-200">
-                      Aplicaciones web dinámicas y rápidas
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <i
-                    class="fa-solid fa-check-circle text-green-300 mt-1 mr-3"
-                  ></i>
-                  <div>
-                    <p class="font-medium text-white">
-                      Optimización de rendimiento
-                    </p>
-                    <p class="text-sm text-primary-200">
-                      Carga rápida y experiencia fluida
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <i
-                    class="fa-solid fa-check-circle text-green-300 mt-1 mr-3"
-                  ></i>
-                  <div>
-                    <p class="font-medium text-white">Integración perfecta</p>
-                    <p class="text-sm text-primary-200">
-                      Compatible con todas nuestras APIs backend
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="lg:w-1/3 lg:pl-8">
-              <div
-                class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center"
-              >
-                <div
-                  class="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4"
-                >
-                  <i class="fa-solid fa-handshake text-2xl text-white"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Colaboración fullstack</h3>
-                <p class="text-primary-100 mb-6 text-sm">
-                  Trabajamos en equipo para ofrecerte soluciones completas de
-                  frontend y backend.
-                </p>
-                <a
-                  href="index-bootstrap.html"
-                  class="inline-flex items-center px-6 py-3 bg-white text-primary-600 rounded-lg font-medium hover:bg-primary-50 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600"
-                  aria-label="Visitar página de servicios frontend de Andriu Dex"
-                >
-                  <i class="fa-solid fa-arrow-right mr-2"></i>
-                  Ver servicios Frontend
-                </a>
-                <p class="text-xs text-primary-200 mt-3">
-                  <i class="fa-solid fa-info-circle mr-1"></i>
-                  Presupuestos conjuntos disponibles
-                </p>
-              </div>
-            </div>
+        <!-- Stats -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16 text-center">
+          <div class="bg-secondary-800/50 backdrop-blur-sm rounded-lg p-6">
+            <p class="text-4xl font-bold text-primary-400 mb-2">8+</p>
+            <p class="text-secondary-300">Años de experiencia</p>
           </div>
-        </div>
-      </section>
-
-      <!-- Formulario de contacto -->
-      <section id="contacto" class="py-16 md:py-24 bg-secondary-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                ¿Listo para impulsar tu proyecto?
-              </h2>
-              <p class="text-secondary-300 mb-8 text-lg">
-                Cuéntame sobre tu proyecto y exploremos cómo puedo ayudarte a
-                construir una solución backend robusta y escalable que impulse
-                tu negocio.
-              </p>
-
-              <div class="space-y-6">
-                <div class="flex items-start">
-                  <div class="flex-shrink-0">
-                    <div
-                      class="flex items-center justify-center h-12 w-12 rounded-md bg-primary-600 text-white"
-                    >
-                      <i class="fa-solid fa-envelope"></i>
-                    </div>
-                  </div>
-                  <div class="ml-4">
-                    <h3 class="text-xl font-medium">Correo electrónico</h3>
-                    <p class="mt-1 text-secondary-300">
-                      gabriel.llerena@ejemplo.com
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex items-start">
-                  <div class="flex-shrink-0">
-                    <div
-                      class="flex items-center justify-center h-12 w-12 rounded-md bg-primary-600 text-white"
-                    >
-                      <i class="fa-solid fa-phone"></i>
-                    </div>
-                  </div>
-                  <div class="ml-4">
-                    <h3 class="text-xl font-medium">Teléfono</h3>
-                    <p class="mt-1 text-secondary-300">+34 600 123 456</p>
-                  </div>
-                </div>
-
-                <div class="flex items-start">
-                  <div class="flex-shrink-0">
-                    <div
-                      class="flex items-center justify-center h-12 w-12 rounded-md bg-primary-600 text-white"
-                    >
-                      <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                  </div>
-                  <div class="ml-4">
-                    <h3 class="text-xl font-medium">Ubicación</h3>
-                    <p class="mt-1 text-secondary-300">
-                      Madrid, España (Disponible remotamente)
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mt-8 flex space-x-4">
-                <a
-                  href="#"
-                  class="text-secondary-300 hover:text-white transition-colors"
-                >
-                  <i class="fa-brands fa-linkedin text-2xl"></i>
-                </a>
-                <a
-                  href="#"
-                  class="text-secondary-300 hover:text-white transition-colors"
-                >
-                  <i class="fa-brands fa-github text-2xl"></i>
-                </a>
-                <a
-                  href="#"
-                  class="text-secondary-300 hover:text-white transition-colors"
-                >
-                  <i class="fa-brands fa-twitter text-2xl"></i>
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <form
-                id="contactForm"
-                class="bg-white text-secondary-900 rounded-lg shadow-xl p-8"
-              >
-                <h3 class="text-2xl font-bold mb-6">Envíame un mensaje</h3>
-
-                <div class="mb-6">
-                  <label
-                    for="name"
-                    class="block text-sm font-medium text-secondary-700 mb-1"
-                  >
-                    Nombre completo <span class="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    class="w-full px-4 py-2 border border-secondary-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500"
-                    required
-                  />
-                </div>
-
-                <div class="mb-6">
-                  <label
-                    for="email"
-                    class="block text-sm font-medium text-secondary-700 mb-1"
-                  >
-                    Correo electrónico <span class="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    class="w-full px-4 py-2 border border-secondary-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500"
-                    required
-                  />
-                </div>
-
-                <div class="mb-6">
-                  <label
-                    for="company"
-                    class="block text-sm font-medium text-secondary-700 mb-1"
-                  >
-                    Empresa
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    class="w-full px-4 py-2 border border-secondary-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500"
-                  />
-                </div>
-
-                <div class="mb-6">
-                  <label
-                    for="message"
-                    class="block text-sm font-medium text-secondary-700 mb-1"
-                  >
-                    Mensaje <span class="text-red-500">*</span>
-                  </label>
-                  <textarea
-                    id="message"
-                    rows="5"
-                    class="w-full px-4 py-2 border border-secondary-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500"
-                    required
-                  ></textarea>
-                </div>
-
-                <div class="flex items-center mb-6">
-                  <input
-                    id="privacy"
-                    type="checkbox"
-                    class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-secondary-300 rounded"
-                    required
-                  />
-                  <label
-                    for="privacy"
-                    class="ml-2 block text-sm text-secondary-700"
-                  >
-                    Acepto la política de privacidad y el tratamiento de mis
-                    datos.
-                  </label>
-                </div>
-
-                <button
-                  type="submit"
-                  class="w-full bg-primary-600 hover:bg-primary-700 text-white py-3 px-6 rounded-md shadow-sm text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors"
-                >
-                  <span id="submit-text">Enviar mensaje</span>
-                  <span id="loading-spinner" class="hidden">
-                    <i class="fas fa-circle-notch fa-spin ml-2"></i>
-                  </span>
-                </button>
-              </form>
-            </div>
+          <div class="bg-secondary-800/50 backdrop-blur-sm rounded-lg p-6">
+            <p class="text-4xl font-bold text-primary-400 mb-2">50+</p>
+            <p class="text-secondary-300">Proyectos completados</p>
           </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-secondary-800 text-white py-8">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <div class="text-2xl font-bold mb-2">
-              <span class="text-primary-400">&lt;</span>Gabriel Llerena<span
-                class="text-primary-400"
-                >/&gt;</span
-              >
-            </div>
-            <p class="text-secondary-400">
-              Desarrollador backend especializado en Java y arquitecturas de
-              alto rendimiento.
-            </p>
+          <div class="bg-secondary-800/50 backdrop-blur-sm rounded-lg p-6">
+            <p class="text-4xl font-bold text-primary-400 mb-2">99.9%</p>
+            <p class="text-secondary-300">Uptime garantizado</p>
           </div>
-          <div class="md:text-right">
-            <p class="text-secondary-400">
-              &copy; 2025 Gabriel Llerena. Todos los derechos reservados.
-            </p>
+          <div class="bg-secondary-800/50 backdrop-blur-sm rounded-lg p-6">
+            <p class="text-4xl font-bold text-primary-400 mb-2">24/7</p>
+            <p class="text-secondary-300">Soporte técnico</p>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- Script para controlar el menú móvil -->
-    <script>
-      // Toggle menú móvil
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
+    <!-- Servicios -->
+    <section id="servicios" class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">
+            Servicios Especializados
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-secondary-600">
+            Soluciones backend robustas y personalizadas para cualquier tipo
+            de proyecto, desde startups hasta empresas consolidadas.
+          </p>
+        </div>
 
-      mobileMenuButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-        mobileMenuButton.setAttribute(
-          "aria-expanded",
-          mobileMenuButton.getAttribute("aria-expanded") === "false"
-            ? "true"
-            : "false"
-        );
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Servicio 1 -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all p-6 border border-secondary-100 group">
+            <div
+              class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary-100 text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-code text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary-900 mb-2">
+              Desarrollo de APIs
+            </h3>
+            <p class="text-secondary-600 mb-4">
+              Diseño e implementación de APIs RESTful escalables, seguras y
+              con documentación completa utilizando Spring Boot y Java.
+            </p>
+            <ul class="space-y-2 text-sm text-secondary-500 mb-4">
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Endpoints robustos y optimizados
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Autenticación OAuth2 y JWT
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Documentación Swagger/OpenAPI
+              </li>
+            </ul>
+            <a href="#contacto" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
+              Más información <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+
+          <!-- Servicio 2 -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all p-6 border border-secondary-100 group">
+            <div
+              class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary-100 text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-cubes text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary-900 mb-2">
+              Microservicios
+            </h3>
+            <p class="text-secondary-600 mb-4">
+              Arquitectura e implementación de sistemas distribuidos basados
+              en microservicios para máxima escalabilidad y resiliencia.
+            </p>
+            <ul class="space-y-2 text-sm text-secondary-500 mb-4">
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Arquitectura basada en dominios (DDD)
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Circuit breakers y service discovery
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Orquestación con Kubernetes
+              </li>
+            </ul>
+            <a href="#contacto" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
+              Más información <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+
+          <!-- Servicio 3 -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all p-6 border border-secondary-100 group">
+            <div
+              class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary-100 text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-database text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary-900 mb-2">
+              Bases de datos
+            </h3>
+            <p class="text-secondary-600 mb-4">
+              Diseño, implementación y optimización de bases de datos
+              relacionales y NoSQL con alto rendimiento y escalabilidad.
+            </p>
+            <ul class="space-y-2 text-sm text-secondary-500 mb-4">
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Diseño eficiente de esquemas
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Optimización de consultas complejas
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Estrategias de replicación y sharding
+              </li>
+            </ul>
+            <a href="#contacto" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
+              Más información <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+
+          <!-- Servicio 4 -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all p-6 border border-secondary-100 group">
+            <div
+              class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary-100 text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-shield-halved text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary-900 mb-2">
+              Seguridad
+            </h3>
+            <p class="text-secondary-600 mb-4">
+              Implementación de robustos sistemas de seguridad, autenticación
+              y autorización para proteger datos sensibles.
+            </p>
+            <ul class="space-y-2 text-sm text-secondary-500 mb-4">
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Prevención de OWASP Top 10
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Sistemas de autenticación multifactor
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Auditorías de seguridad
+              </li>
+            </ul>
+            <a href="#contacto" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
+              Más información <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+
+          <!-- Servicio 5 -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all p-6 border border-secondary-100 group">
+            <div
+              class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary-100 text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-cloud text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary-900 mb-2">
+              Cloud & DevOps
+            </h3>
+            <p class="text-secondary-600 mb-4">
+              Despliegue y gestión de aplicaciones en la nube con CI/CD
+              automatizado y monitorización avanzada.
+            </p>
+            <ul class="space-y-2 text-sm text-secondary-500 mb-4">
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Despliegue en AWS, Azure o GCP
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Pipelines de CI/CD con Jenkins o GitHub Actions
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Infraestructura como código (Terraform)
+              </li>
+            </ul>
+            <a href="#contacto" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
+              Más información <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+
+          <!-- Servicio 6 -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all p-6 border border-secondary-100 group">
+            <div
+              class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary-100 text-primary-600 mb-4 group-hover:bg-primary-600 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-lightbulb text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary-900 mb-2">
+              Consultoría técnica
+            </h3>
+            <p class="text-secondary-600 mb-4">
+              Asesoría experta para optimización de rendimiento, arquitectura
+              y mejores prácticas de desarrollo backend.
+            </p>
+            <ul class="space-y-2 text-sm text-secondary-500 mb-4">
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Revisión y mejora de código existente
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Optimización de rendimiento
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
+                Planificación de arquitectura escalable
+              </li>
+            </ul>
+            <a href="#contacto" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
+              Más información <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tecnologías -->
+    <section id="tecnologias" class="py-16 md:py-24 bg-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">
+            Tecnologías dominadas
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-secondary-600">
+            Utilizo las herramientas más modernas y robustas para desarrollar
+            soluciones de alto rendimiento.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <!-- Java -->
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4">
+              <i class="fa-brands fa-java text-3xl text-primary-600"></i>
+            </div>
+            <h3 class="font-medium text-secondary-900">Java</h3>
+          </div>
+
+          <!-- Spring -->
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4">
+              <i class="fa-solid fa-leaf text-3xl text-green-500"></i>
+            </div>
+            <h3 class="font-medium text-secondary-900">Spring Boot</h3>
+          </div>
+
+          <!-- SQL -->
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4">
+              <i class="fa-solid fa-database text-3xl text-blue-500"></i>
+            </div>
+            <h3 class="font-medium text-secondary-900">SQL</h3>
+          </div>
+
+          <!-- NoSQL -->
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4">
+              <i class="fa-solid fa-cubes text-3xl text-yellow-500"></i>
+            </div>
+            <h3 class="font-medium text-secondary-900">NoSQL</h3>
+          </div>
+
+          <!-- Docker -->
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4">
+              <i class="fa-brands fa-docker text-3xl text-blue-600"></i>
+            </div>
+            <h3 class="font-medium text-secondary-900">Docker</h3>
+          </div>
+
+          <!-- Kubernetes -->
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4">
+              <i class="fa-solid fa-dharmachakra text-3xl text-blue-400"></i>
+            </div>
+            <h3 class="font-medium text-secondary-900">Kubernetes</h3>
+          </div>
+
+          <!-- AWS -->
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4">
+              <i class="fa-brands fa-aws text-3xl text-orange-500"></i>
+            </div>
+            <h3 class="font-medium text-secondary-900">AWS</h3>
+          </div>
+
+          <!-- Git -->
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4">
+              <i class="fa-brands fa-git-alt text-3xl text-red-500"></i>
+            </div>
+            <h3 class="font-medium text-secondary-900">Git</h3>
+          </div>
+
+          <!-- CI/CD -->
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4">
+              <i class="fa-solid fa-infinity text-3xl text-purple-600"></i>
+            </div>
+            <h3 class="font-medium text-secondary-900">CI/CD</h3>
+          </div>
+
+          <!-- REST -->
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4">
+              <i class="fa-solid fa-plug text-3xl text-green-600"></i>
+            </div>
+            <h3 class="font-medium text-secondary-900">REST APIs</h3>
+          </div>
+
+          <!-- gRPC -->
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4">
+              <i class="fa-solid fa-bolt text-3xl text-yellow-600"></i>
+            </div>
+            <h3 class="font-medium text-secondary-900">gRPC</h3>
+          </div>
+
+          <!-- Kafka -->
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white shadow-md mb-4">
+              <i class="fa-solid fa-stream text-3xl text-red-600"></i>
+            </div>
+            <h3 class="font-medium text-secondary-900">Apache Kafka</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">
+            Lo que dicen mis clientes
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-secondary-600">
+            He tenido el privilegio de trabajar con empresas innovadoras de
+            diversos sectores.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Testimonio 1 -->
+          <div class="bg-white rounded-xl shadow-lg p-8 relative hover:shadow-xl transition-shadow">
+            <div class="text-primary-600 text-5xl absolute -top-5 left-6 opacity-30">
+              "
+            </div>
+            <div class="flex items-center mb-6">
+              <div class="text-yellow-400 flex">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <blockquote class="mb-6 text-secondary-600">
+              "Gabriel desarrolló toda nuestra arquitectura de microservicios,
+              mejorando drásticamente el rendimiento y escalabilidad. Su
+              profundo conocimiento técnico y profesionalismo hicieron que la
+              transición fuera fluida."
+            </blockquote>
+            <div class="flex items-center">
+              <div class="h-12 w-12 rounded-full bg-secondary-200 mr-4 flex items-center justify-center">
+                <i class="fa-solid fa-user text-secondary-500"></i>
+              </div>
+              <div>
+                <p class="font-medium text-secondary-900">
+                  Roberto Hernández
+                </p>
+                <p class="text-sm text-secondary-500">
+                  CTO, FinTech Solutions
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 2 -->
+          <div class="bg-white rounded-xl shadow-lg p-8 relative hover:shadow-xl transition-shadow">
+            <div class="text-primary-600 text-5xl absolute -top-5 left-6 opacity-30">
+              "
+            </div>
+            <div class="flex items-center mb-6">
+              <div class="text-yellow-400 flex">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <blockquote class="mb-6 text-secondary-600">
+              "Contratamos a Gabriel para optimizar nuestras bases de datos y
+              APIs. El resultado fue impresionante: nuestra plataforma ahora
+              maneja 10 veces más tráfico sin problemas de rendimiento.
+              Altamente recomendado."
+            </blockquote>
+            <div class="flex items-center">
+              <div class="h-12 w-12 rounded-full bg-secondary-200 mr-4 flex items-center justify-center">
+                <i class="fa-solid fa-user text-secondary-500"></i>
+              </div>
+              <div>
+                <p class="font-medium text-secondary-900">Elena Martínez</p>
+                <p class="text-sm text-secondary-500">CEO, DataTrack</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 3 -->
+          <div class="bg-white rounded-xl shadow-lg p-8 relative hover:shadow-xl transition-shadow">
+            <div class="text-primary-600 text-5xl absolute -top-5 left-6 opacity-30">
+              "
+            </div>
+            <div class="flex items-center mb-6">
+              <div class="text-yellow-400 flex">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <blockquote class="mb-6 text-secondary-600">
+              "La consultoría de Gabriel nos ayudó a identificar y resolver
+              problemas críticos en nuestra infraestructura. Su enfoque
+              sistemático y su capacidad para explicar conceptos complejos de
+              manera simple fueron invaluables."
+            </blockquote>
+            <div class="flex items-center">
+              <div class="h-12 w-12 rounded-full bg-secondary-200 mr-4 flex items-center justify-center">
+                <i class="fa-solid fa-user text-secondary-500"></i>
+              </div>
+              <div>
+                <p class="font-medium text-secondary-900">Miguel Sánchez</p>
+                <p class="text-sm text-secondary-500">
+                  Director de IT, LogiTech Solutions
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de promoción cruzada -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-primary-600 to-primary-700 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:flex lg:items-center lg:justify-between">
+          <div class="lg:w-2/3">
+            <div class="flex items-center mb-4">
+              <i class="fa-solid fa-palette text-3xl mr-3 text-primary-200"></i>
+              <h2 class="text-3xl md:text-4xl font-bold">
+                ¿Tu proyecto también necesita Frontend?
+              </h2>
+            </div>
+            <p class="text-lg text-primary-100 mb-6 leading-relaxed">
+              Para completar tu proyecto con una interfaz moderna y atractiva,
+              te recomiendo los servicios de
+              <span class="font-semibold text-white">Andriu Dex</span>,
+              especialista en desarrollo frontend con React.js y tecnologías
+              modernas.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-4 mb-8">
+              <div class="flex items-start">
+                <i class="fa-solid fa-check-circle text-green-300 mt-1 mr-3"></i>
+                <div>
+                  <p class="font-medium text-white">
+                    Interfaces responsivas y modernas
+                  </p>
+                  <p class="text-sm text-primary-200">
+                    Diseños que se adaptan a cualquier dispositivo
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <i class="fa-solid fa-check-circle text-green-300 mt-1 mr-3"></i>
+                <div>
+                  <p class="font-medium text-white">
+                    Desarrollo con React.js
+                  </p>
+                  <p class="text-sm text-primary-200">
+                    Aplicaciones web dinámicas y rápidas
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <i class="fa-solid fa-check-circle text-green-300 mt-1 mr-3"></i>
+                <div>
+                  <p class="font-medium text-white">
+                    Optimización de rendimiento
+                  </p>
+                  <p class="text-sm text-primary-200">
+                    Carga rápida y experiencia fluida
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <i class="fa-solid fa-check-circle text-green-300 mt-1 mr-3"></i>
+                <div>
+                  <p class="font-medium text-white">Integración perfecta</p>
+                  <p class="text-sm text-primary-200">
+                    Compatible con todas nuestras APIs backend
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:w-1/3 lg:pl-8">
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+              <div class="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
+                <i class="fa-solid fa-handshake text-2xl text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Colaboración fullstack</h3>
+              <p class="text-primary-100 mb-6 text-sm">
+                Trabajamos en equipo para ofrecerte soluciones completas de
+                frontend y backend.
+              </p>
+              <a href="index-bootstrap.html"
+                class="inline-flex items-center px-6 py-3 bg-white text-primary-600 rounded-lg font-medium hover:bg-primary-50 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600"
+                aria-label="Visitar página de servicios frontend de Andriu Dex">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                Ver servicios Frontend
+              </a>
+              <p class="text-xs text-primary-200 mt-3">
+                <i class="fa-solid fa-info-circle mr-1"></i>
+                Presupuestos conjuntos disponibles
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="py-16 md:py-24 bg-secondary-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+              ¿Listo para impulsar tu proyecto?
+            </h2>
+            <p class="text-secondary-300 mb-8 text-lg">
+              Cuéntame sobre tu proyecto y exploremos cómo puedo ayudarte a
+              construir una solución backend robusta y escalable que impulse
+              tu negocio.
+            </p>
+
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary-600 text-white">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-xl font-medium">Correo electrónico</h3>
+                  <p class="mt-1 text-secondary-300">
+                    gabriel0llerena@gmail.com
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary-600 text-white">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-xl font-medium">Teléfono</h3>
+                  <p class="mt-1 text-secondary-300">+593 98 748 2734</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary-600 text-white">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-xl font-medium">Ubicación</h3>
+                  <p class="mt-1 text-secondary-300">
+                    Ambato, Ecuador (Disponible remotamente)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 flex space-x-4">
+              <a href="#" class="text-secondary-300 hover:text-white transition-colors">
+                <i class="fa-brands fa-linkedin text-2xl"></i>
+              </a>
+              <a href="#" class="text-secondary-300 hover:text-white transition-colors">
+                <i class="fa-brands fa-github text-2xl"></i>
+              </a>
+              <a href="#" class="text-secondary-300 hover:text-white transition-colors">
+                <i class="fa-brands fa-twitter text-2xl"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <form id="contactForm" class="bg-white text-secondary-900 rounded-lg shadow-xl p-8">
+              <h3 class="text-2xl font-bold mb-6">Envíame un mensaje</h3>
+
+              <div class="mb-6">
+                <label for="name" class="block text-sm font-medium text-secondary-700 mb-1">
+                  Nombre completo <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="name"
+                  class="w-full px-4 py-2 border border-secondary-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500"
+                  required />
+              </div>
+
+              <div class="mb-6">
+                <label for="email" class="block text-sm font-medium text-secondary-700 mb-1">
+                  Correo electrónico <span class="text-red-500">*</span>
+                </label>
+                <input type="email" id="email"
+                  class="w-full px-4 py-2 border border-secondary-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500"
+                  required />
+              </div>
+
+              <div class="mb-6">
+                <label for="company" class="block text-sm font-medium text-secondary-700 mb-1">
+                  Empresa
+                </label>
+                <input type="text" id="company"
+                  class="w-full px-4 py-2 border border-secondary-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500" />
+              </div>
+
+              <div class="mb-6">
+                <label for="message" class="block text-sm font-medium text-secondary-700 mb-1">
+                  Mensaje <span class="text-red-500">*</span>
+                </label>
+                <textarea id="message" rows="5"
+                  class="w-full px-4 py-2 border border-secondary-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500"
+                  required></textarea>
+              </div>
+
+              <div class="flex items-center mb-6">
+                <input id="privacy" type="checkbox"
+                  class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-secondary-300 rounded" required />
+                <label for="privacy" class="ml-2 block text-sm text-secondary-700">
+                  Acepto la política de privacidad y el tratamiento de mis
+                  datos.
+                </label>
+              </div>
+
+              <button id="submit-button" type="submit"
+                class="w-full bg-primary-300 text-primary-400 py-3 px-6 rounded-md shadow-sm text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors cursor-not-allowed"
+                disabled>
+                <span id="submit-text">Enviar mensaje</span>
+                <span id="loading-spinner" class="hidden">
+                  <i class="fas fa-circle-notch fa-spin ml-2"></i>
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-secondary-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <div class="text-2xl font-bold mb-2">
+            <span class="text-primary-400">&lt;</span>Gabriel Llerena<span class="text-primary-400">/&gt;</span>
+          </div>
+          <p class="text-secondary-400">
+            Desarrollador backend especializado en Java y arquitecturas de
+            alto rendimiento.
+          </p>
+        </div>
+        <div class="md:text-right">
+          <p class="text-secondary-400">
+            &copy; 2025 Gabriel Llerena. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script para controlar el menú móvil -->
+  <script>
+    // Toggle menú móvil
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    mobileMenuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      mobileMenuButton.setAttribute(
+        "aria-expanded",
+        mobileMenuButton.getAttribute("aria-expanded") === "false"
+          ? "true"
+          : "false"
+      );
+    });
+
+    // Enlaces del menú móvil
+    const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+    mobileMenuLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        mobileMenuButton.setAttribute("aria-expanded", "false");
       });
+    });
 
-      // Enlaces del menú móvil
-      const mobileMenuLinks = mobileMenu.querySelectorAll("a");
-      mobileMenuLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.add("hidden");
-          mobileMenuButton.setAttribute("aria-expanded", "false");
-        });
-      });
-
-      // Navegación suave para todos los enlaces
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          const targetId = this.getAttribute("href");
-          if (targetId === "#") return;
-
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 64, // Altura de la navbar
-              behavior: "smooth",
-            });
-          }
-        });
-      });
-
-      // Validación del formulario
-      const contactForm = document.getElementById("contactForm");
-      const submitButton = contactForm.querySelector('button[type="submit"]');
-      const submitText = document.getElementById("submit-text");
-      const loadingSpinner = document.getElementById("loading-spinner");
-
-      contactForm.addEventListener("submit", function (e) {
+    // Navegación suave para todos los enlaces
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
         e.preventDefault();
 
-        // Mostrar estado de carga
-        submitButton.disabled = true;
-        submitText.textContent = "Enviando...";
-        loadingSpinner.classList.remove("hidden");
+        const targetId = this.getAttribute("href");
+        if (targetId === "#") return;
 
-        // Simular envío (reemplazar con lógica real de envío)
-        setTimeout(() => {
-          // Restablecer formulario
-          contactForm.reset();
-
-          // Restablecer botón
-          submitButton.disabled = false;
-          submitText.textContent = "Mensaje enviado";
-          loadingSpinner.classList.add("hidden");
-
-          // Mostrar mensaje de éxito (reemplazar con una notificación mejor)
-          setTimeout(() => {
-            submitText.textContent = "Enviar mensaje";
-            alert("¡Mensaje enviado con éxito! Te contactaré pronto.");
-          }, 2000);
-        }, 1500);
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 64, // Altura de la navbar
+            behavior: "smooth",
+          });
+        }
       });
-    </script>
-  </body>
+    });
+
+    // Validación del formulario
+    const contactForm = document.getElementById("contactForm");
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    const submitText = document.getElementById("submit-text");
+    const loadingSpinner = document.getElementById("loading-spinner");
+
+    // Obtener la casilla de aceptación de privacidad
+    const privacyCheckbox = document.getElementById("privacy");
+
+    // Detectar el cambio en el estado de la casilla de verificación
+    privacyCheckbox.addEventListener("change", function () {
+      // Si la casilla está marcada, habilitar el botón y cambiar el color
+      if (privacyCheckbox.checked) {
+        submitButton.disabled = false;
+        submitButton.classList.remove("cursor-not-allowed", "bg-primary-200", "text-primary-400");
+        submitButton.classList.add("bg-primary-600", "text-white");
+      } else {
+        submitButton.disabled = true;
+        submitButton.classList.add("cursor-not-allowed", "bg-primary-200", "text-primary-400");
+        submitButton.classList.remove("bg-primary-600", "text-white");
+      }
+    });
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Mostrar estado de carga
+      submitButton.disabled = true;
+      submitText.textContent = "Enviando...";
+      loadingSpinner.classList.remove("hidden");
+
+      // Simular envío (reemplazar con lógica real de envío)
+      setTimeout(() => {
+        // Restablecer formulario
+        contactForm.reset();
+
+        // Restablecer botón
+        submitButton.disabled = false;
+        submitText.textContent = "Mensaje enviado";
+        loadingSpinner.classList.add("hidden");
+
+        // Mostrar mensaje de éxito (reemplazar con una notificación mejor)
+        setTimeout(() => {
+          submitText.textContent = "Enviar mensaje";
+          alert("¡Mensaje enviado con éxito! Te contactaré pronto.");
+        }, 2000);
+      }, 1500);
+    });
+  </script>
+</body>
+
 </html>
